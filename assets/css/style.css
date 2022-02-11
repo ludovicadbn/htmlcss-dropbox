@@ -17,6 +17,20 @@ a{
     display: inline-block;
 }
 
+li{
+    list-style-type: none;
+}
+
+.button{
+    background-color: #0061ff;
+    padding: 7px 15px;
+    color: white;
+}
+
+.button:hover{
+    background-color: #367be9;
+}
+
 /* NAV */
 nav{
     position: fixed;
@@ -63,15 +77,6 @@ nav a:hover, .hero .cancel-subscription:hover{
     text-align: right;
 }
 
-.menu-topright .f-white{
-    background-color: #0061ff;
-    padding: 7px 15px;
-}
-
-.menu-topright .f-white:hover{
-    background-color: #367be9;
-}
-
 /* HERO */
 .hero{
     width: 80%;
@@ -81,15 +86,6 @@ nav a:hover, .hero .cancel-subscription:hover{
 .hero h2{
     padding: 5% 0 3%;
     font-size: 3.9em;
-}
-
-.button{
-    background-color: #0061ff;
-    padding: 7px 15px;
-}
-
-.button:hover{
-    background-color: #367be9;
 }
 
 .cancel-subscription{
@@ -131,4 +127,92 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 .c-60 img{
     width: 100%;
+}
+
+/* SEZIONI */
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container h2{
+    margin: 10% 0 5%;
+    font-size: 2em;
+}
+
+.container label{
+    margin-right: 20px;
+
+}
+
+.plan-column{
+    width: calc(100% / 3 - 20px);
+    border: 1px solid #d0d0d3;
+    margin: 35px 10px;
+    float: left;
+}
+
+.plan-type{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+#single::before{
+    content: "\1F464";
+}
+
+.plan-type span::before{
+    content: "\1F3E2";
+}
+
+.plan-details{
+    width: 80%;
+    margin: 30px auto 0;
+}
+
+.plan-details h3{
+    padding: 0px 0 15px;
+}
+
+.plan-details span{
+    display: block;
+}
+
+.plan-details .f-gray{
+    padding: 5px 0 15px;
+    font-size: 0.8em;
+}
+
+.plan-details ul li{
+    font-size: 0.75em;
+    margin: 20px 0;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.price::after{
+    padding-left: 5px;
+    content: "\20AC";
+}
+
+#users::before{
+    content: "\1F464";
+}
+
+#storage::before{
+    content: "\1F5BF";
+}
+
+#functions::before{
+    content: "\1F589";
+}
+
+.trial{
+    margin: 30px 0 20px;
+    font-size: 0.8em;
+    text-align: center;
 }
