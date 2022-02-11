@@ -3,10 +3,67 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+/* NAV */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav a{
+    margin: 0 15px;
+    color: black;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.menu-topleft{
+    width: 50%;
+    display: inline-block;
+    padding: 1.5% 0;
+    float: left;
+}
+
+.logo{
+    float: left;
+    width: 15%;
+    margin: 0 15px;
+}
+
+.menu-topright{
+    display: inline-block;
+    width: 50%;
+    padding: 1.5% 0;
+    float: left;
+    text-align: right;
+}
+
+.menu-topright .f-white{
+    background-color: #0061ff;
+    padding: 7px 15px;
 }
