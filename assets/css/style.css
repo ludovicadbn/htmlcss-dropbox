@@ -1,4 +1,4 @@
-/* ANCHOR GENERAL */
+/* GENERAL */
 *{
     padding: 0;
     margin: 0;
@@ -15,11 +15,6 @@
 a{
     text-decoration: none;
     display: inline-block;
-}
-
-a:hover{
-    text-decoration: underline;
-    color: black;
 }
 
 /* NAV */
@@ -40,6 +35,11 @@ nav a{
     color: black;
     font-size: 0.8em;
     font-weight: bold;
+}
+
+nav a:hover, .hero .cancel-subscription:hover{
+    text-decoration: underline;
+    color: black;
 }
 
 .menu-topleft{
@@ -66,4 +66,69 @@ nav a{
 .menu-topright .f-white{
     background-color: #0061ff;
     padding: 7px 15px;
+}
+
+.menu-topright .f-white:hover{
+    background-color: #367be9;
+}
+
+/* HERO */
+.hero{
+    width: 80%;
+    margin: 5% auto 0;
+}
+
+.hero h2{
+    padding: 5% 0 3%;
+    font-size: 3.9em;
+}
+
+.button{
+    background-color: #0061ff;
+    padding: 7px 15px;
+}
+
+.button:hover{
+    background-color: #367be9;
+}
+
+.cancel-subscription{
+    color: black;
+    display: block;
+}
+
+.c-40{
+    width: calc(40% - 40px);
+    margin: 0 auto;
+    float: left;
+    padding-right: 40px;
+}
+
+.c-40 span, .c-40 div{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.c-40 div{
+    margin-top: 25px;
+}
+
+.c-40 div a:last-of-type{
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.c-40 svg{
+    margin-top: 30px;
+    width: 7%;
+}
+
+.c-60{
+    width: 60%;
+    margin: 0 auto;
+    float: left;
+}
+
+.c-60 img{
+    width: 100%;
 }
