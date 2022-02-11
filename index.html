@@ -56,9 +56,11 @@
                         <span>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</span>
                         <div>
                             <a class="button f-white" href="#">Inizia la tua prova gratuita</a>
-                            <a class="cancel-subscription"href="#">Annulla in qualsiasi momento</a>    
+                            <a class="cancel-subscription" href="#">Annulla in qualsiasi momento</a>    
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"/></svg>
+                        <a href="#plans">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"/></svg>
+                        </a>
                     </div>
                     <div class="c-60">
                         <img src="./assets/img/jumbo.png" alt="">
@@ -67,13 +69,13 @@
             </div>
 
         </section>
-        <section class="container">
+        <section class="container" id="plans">
             <!-- TODO piani dropbox -->
             <h2>Trova il piano Dropbox Business che fa per te</h2>
             <div>
-                <input type="radio" name="fatturazione">
+                <input type="radio" name="fatturazione" id="fatturazione">
                 <label for="fatturazione">Fatturazione mensile</label>
-                <input type="radio" name="fatturazione">
+                <input type="radio" name="fatturazione" id="fatturazione2">
                 <label for="fatturazione2">Fatturazione annuale</label>
             </div>
             <div class="clearfix">
@@ -99,18 +101,141 @@
                         <div class="trial">
                             <a class="button" href="#">Prova gratis per 30 giorni</a>
                         </div>
-                        <div>oppure <span></span></div>
+                        <div class="purchase">
+                            <span>oppure </span>
+                            <a href="#">acquista ora</a>
+                        </div>
+                        <div class="pack standard">
+                            <h5>Punti salienti del piano</h5>
+                            <ul>
+                                <li>
+                                    Invia file fino a 100 GB con Dropbox Transfert
+                                </li>
+                                <li>
+                                    Cartelle offline su dispositivi mobile
+                                </li>
+                                <li>
+                                    Pulizia remota dell'account
+                                </li>
+                                <li>
+                                    Filigrana documento
+                                </li>
+                                <li>
+                                    Assitenza prioritaria via email e chat
+                                </li>
+                                <li>
+
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="plan-column">
                     <div class="plan-type">
                         <span>Team</span>
                     </div>
+                    <div class="plan-details">
+                        <h3>Standard</h3>
+                        <span class="price">19,99</span>
+                        <span class="f-gray">/ utente / mese, a partire da 3 utenti</span>
+                        <ul>
+                            <li id="users">
+                                1 Utente
+                            </li>
+                            <li id="storage">
+                                3 TB di spazio di archiviazione sicuro
+                            </li>
+                            <li id="functions">
+                                Funzioni di produttività premium e condivisione file semplice e sicura
+                            </li>
+                        </ul>
+                        <div class="trial">
+                            <a class="button" href="#">Prova gratis per 30 giorni</a>
+                        </div>
+                        <div class="purchase">
+                            <span>oppure </span>
+                            <a href="#">acquista ora</a>
+                        </div>
+                        <div class="pack">
+                            <h5>Punti salienti del piano</h5>
+                            <ul>
+                                <li>
+                                    Invia file fino a 100 GB con Dropbox Transfert
+                                </li>
+                                <li>
+                                    Cartelle offline su dispositivi mobile
+                                </li>
+                                <li>
+                                    Pulizia remota dell'account
+                                </li>
+                                <li>
+                                    Filigrana documento
+                                </li>
+                                <li>
+                                    Assitenza prioritaria via email e chat
+                                </li>
+                                <li>
+                                    Assitenza prioritaria via email e chat
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="plan-column">
                     <div class="plan-type">
                         <span>Team</span>
                     </div>
+                    <div class="plan-details">
+                        <h3>Advanced</h3>
+                        <span class="price">19,99</span>
+                        <span class="f-gray">/mese</span>
+                        <ul>
+                            <li id="users">
+                                1 Utente
+                            </li>
+                            <li id="storage">
+                                3 TB di spazio di archiviazione sicuro
+                            </li>
+                            <li id="functions">
+                                Funzioni di produttività premium e condivisione file semplice e sicura
+                            </li>
+                        </ul>
+                        <div class="trial">
+                            <a class="button" href="#">Prova gratis per 30 giorni</a>
+                        </div>
+                        <div class="purchase">
+                            <span>oppure </span>
+                            <a href="#">acquista ora</a>
+                        </div>
+                        <div class="pack">
+                            <h5>Punti salienti del piano</h5>
+                            <ul>
+                                <li>
+                                    Invia file fino a 100 GB con Dropbox Transfert
+                                </li>
+                                <li>
+                                    Cartelle offline su dispositivi mobile
+                                </li>
+                                <li>
+                                    Pulizia remota dell'account
+                                </li>
+                                <li>
+                                    Filigrana documento
+                                </li>
+                                <li>
+                                    Assitenza prioritaria via email e chat
+                                </li>
+                                <li>
+                                    Assitenza prioritaria via email e chat
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-row">
+                <div class="plan-type">
+                    <span>Team</span>
                 </div>
             </div>
         </section>
