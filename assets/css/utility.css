@@ -17,3 +17,11 @@
 .bg-lightblue{
     background-color: #b4d0e7;
 }
+
+.border-gray{
+    border: 1px solid #d0d0d3;
+}
+
+.pb-10{
+    padding-bottom: 10%;
+}
