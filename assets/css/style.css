@@ -10,6 +10,10 @@ html{
     scroll-behavior: smooth;
 }
 
+img{
+    max-width: 100%;
+}
+
 .clearfix::after{
     content: "";
     display: table;
@@ -127,14 +131,30 @@ nav a:hover, .hero .cancel-subscription:hover{
     text-decoration: underline;
 }
 
+.container .faq{
+    margin-bottom: 10%;
+}
+
+.container .faq h3{
+    margin: 10% 0 5%;
+    font-size: 2em;
+}
+
+.container .faq div{
+    font-weight: bold;
+    font-size: 1.1em;
+    border-top: 1px solid #d0d0d3;
+    padding: 3% 0;
+}
+
+.container .faq div:last-of-type{
+    border-bottom: 1px solid #d0d0d3;
+}
+
 .plan-type{
     padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid #d0d0d3;
-}
-
-.plan-type span::before{
-    content: "\1F3E2";
 }
 
 .plan-details{
@@ -162,23 +182,6 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 .price{
     font-weight: bold;
-}
-
-.price::after{
-    padding-left: 5px;
-    content: "\20AC";
-}
-
-.users::before{
-    content: "\1F464";
-}
-
-#storage::before{
-    content: "\1F5BF";
-}
-
-#functions::before{
-    content: "\1F589";
 }
 
 .trial{
@@ -293,4 +296,24 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 #clear-channel{
     background-color: #ffd830;
+}
+
+.bg-lightblue .container h2{
+    width: calc(65% - 25%);
+    margin: 10% 25% 10% 0;
+    color: #61082b;
+    float: left;
+}
+
+.bg-lightblue .container a{
+    margin-top: 10%;
+    float: left;
+    background-color: #fff;
+    padding: 5px 40px;
+    color: #000;
+    font-weight: bold;
+}
+
+.faq .fa-angle-down{
+    float: right;
 }
