@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/columns.css">
     <link rel="stylesheet" href="./assets/css/utility.css">
     <title>Document</title>
 </head>
 <body>
+
     <header>
         <nav class="main-menu bg-white clearfix">
             <div class="menu-topleft">
@@ -48,6 +50,7 @@
     </header>
 
     <main>
+
         <section class="bg-lightblue">
             <!-- TODO hero -->
             <div class="hero">
@@ -68,11 +71,11 @@
                     </div>
                 </div>
             </div>
-
         </section>
+
         <section class="container" id="plans">
             <!-- TODO piani dropbox -->
-            <h2>Trova il piano Dropbox Business che fa per te</h2>
+            <h2 class="margin-h2-container" >Trova il piano Dropbox Business che fa per te</h2>
             <div>
                 <input type="radio" name="fatturazione" id="fatturazione">
                 <label for="fatturazione">Fatturazione mensile</label>
@@ -250,6 +253,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container clearfix">
             <!-- TODO trova un partner -->
             <div class="c-55">
@@ -263,9 +267,10 @@
                 </div>
             </div>
         </section>
+
         <section class="container clearfix">
             <!-- TODO dropbox business -->
-            <h2>Esegui più operazioni con Dropbox Business</h2>
+            <h2 class="margin-h2-container" >Esegui più operazioni con Dropbox Business</h2>
             <div class="column-33">
                 <img src="./assets/img/business-feature-switching-tools.png" alt="business feature switching tools">
                 <h4>Passa di meno da uno strumento all'altro</h4>
@@ -297,24 +302,28 @@
                 <h4>Passa di meno da uno strumento all'altro</h4>
                 <span>Porta a termine le attività quotidiane con un solo strumento. Crea modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</span>
             </div>
-
         </section>
+
         <section>
             <!-- TODO clients -->
             <div class="container">
                 <div class="clients">
-                    <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+                    <h2 class="margin-h2-container"£>Più di 500.000 team utilizzano Dropbox Business</h2>
                     <a href="#">Scopri di più sui nostri clienti</a>
                 </div>
             </div>
-            <div class="clearfix">
+            <div class="vw-100 clearfix">
                 <div class="c-25">
-                    <img src="./assets/img/designit.svg" alt="designit logo">
-                    <img src="./assets/img/university_of_florida.svg" alt="university of florida logo">
+                    <div class="c-logo">
+                        <img id="designit" src="./assets/img/designit.svg" alt="designit logo">
+                        <img id="uniflorida" src="./assets/img/university_of_florida.svg" alt="university of florida logo">
+                    </div>
                 </div>
                 <div class="c-25">
-                    <img src="./assets/img/arizona_state_university.svg" alt="arizona state university logo">
-                    <img src="./assets/img/topps.svg" alt="topps logo">
+                    <div class="c-logo">
+                        <img id="uniarizona" src="./assets/img/arizona_state_university.svg" alt="arizona state university logo">
+                        <img id="topps" src="./assets/img/topps.svg" alt="topps logo">
+                    </div>
                 </div>
                 <div class="c-50 bg-lightgray">
                     <img src="./assets/img/designit.svg" alt="designit logo">
@@ -322,15 +331,26 @@
                     <span>Morten Thomsen, Global IT Lead</span>
                 </div>
                 <div class="c-25">
-                    <img src="./assets/img/world_bicycle_relief.svg" alt="world bicycle relief logo">
-                    <img src="./assets/img/lonely_planet.svg" alt="lonely planet logo">
+                    <div class="c-logo">
+                        <img id="world-bicycle" src="./assets/img/world_bicycle_relief.svg" alt="world bicycle relief logo">
+                        <img id="lonely-planet" src="./assets/img/lonely_planet.svg" alt="lonely planet logo">
+                    </div>
                 </div>
                 <div class="c-25">
-                    <img src="./assets/img/hearst_corp.svg" alt="hearst corp logo">
-                    <img src="./assets/img/clear_channel.svg" alt="clear channel logo">
+                    <div class="c-logo">
+                        <img id="hearst-corp" src="./assets/img/hearst_corp.svg" alt="hearst corp logo">
+                        <img id="clear-channel" src="./assets/img/clear_channel.svg" alt="clear channel logo">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-lightblue">
+                <div class="container">
+                    <h2>Porta Dropbox Business nella tua azienda</h2>
+                    <a href="#">Inizia la tua prova gratuita</a>
                 </div>
             </div>
         </section>
+
         <section>
             <!-- TODO FAQ -->
         </section>

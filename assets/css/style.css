@@ -106,12 +106,25 @@ nav a:hover, .hero .cancel-subscription:hover{
 }
 
 .container h2{
+    font-size: 2.3em;
+}
+
+.margin-h2-container{
     margin: 8% 0 5%;
-    font-size: 2em;
 }
 
 .container label{
     margin-right: 20px;
+}
+
+.container .clients{
+    width: 46%;
+    margin-bottom: 2%;
+}
+
+.container .clients a{
+    color: #0061ff;
+    text-decoration: underline;
 }
 
 .plan-type{
@@ -245,22 +258,39 @@ nav a:hover, .hero .cancel-subscription:hover{
 .button-partner{
     border: 1px solid black;
     padding: 7px 15px;
-}
-
-.button-partner{
     margin-top: 40px;
 }
 
-.container .clients{
-    width: 40%;
-    margin-bottom: 2%;
+#designit{
+    background-color: #a2d39b;
+    border: 10px solid #cbe7c7;
+    box-sizing: border-box;
 }
 
-.container .clients h2{
-    font-size: 2em;
+#uniflorida{
+    background-color: #0093ce;
 }
 
-.container .clients a{
-    color: #0061ff;
-    text-decoration: underline;
+#uniarizona{
+    background-color: #61082b;
+}
+
+#topps{
+    background-color: #ee1a1a;
+}
+
+#world-bicycle{
+    background-color: #d5001f;
+}
+
+#lonely-planet{
+    background-color: #0d2481;
+}
+
+#hearst-corp{
+    background-color: #b4d0e7;
+}
+
+#clear-channel{
+    background-color: #ffd830;
 }
