@@ -273,11 +273,18 @@ nav a:hover, .hero .cancel-subscription:hover{
 }
 
 .square{
-    border: 1px solid black;
     width: 50%;
     margin: 0 auto;
-    height: 190px;
     float: left;
+    height: 33vh;
+    line-height: 33vh;
+}
+
+.square img{
+    width: calc(100% - 50%);
+    margin: 0 25%;
+    text-align: center;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(46deg) brightness(108%) contrast(102%);
 }
 
 .client-quote{
@@ -285,6 +292,7 @@ nav a:hover, .hero .cancel-subscription:hover{
     padding: 2.5% 2.5% 8% 2.5%;
     float: left;
     overflow-y: auto;
+    height: 66vh;
 }
 
 .client-quote img{
@@ -308,10 +316,12 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 #uniarizona{
     background-color: #61082b;
+    padding-top: 10%;
 }
 
 #topps{
     background-color: #ee1a1a;
+    padding-top: 4%;
 }
 
 #world-bicycle{
@@ -320,6 +330,7 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 #lonely-planet{
     background-color: #0d2481;
+    padding-top: 4%;
 }
 
 #hearst-corp{
@@ -328,6 +339,7 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 #clear-channel{
     background-color: #ffd830;
+    padding-top: 6%;
 }
 
 .bg-lightblue .container h2{
