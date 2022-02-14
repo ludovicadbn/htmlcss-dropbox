@@ -41,6 +41,7 @@ nav{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 500;
 }
 
 nav li{
@@ -82,7 +83,9 @@ nav a:hover, .hero .cancel-subscription:hover{
 /* HERO */
 .hero{
     width: 80%;
-    margin: 5% auto 0;
+    margin: 0 auto 10%;
+    position: relative;
+    bottom: -80px;
 }
 
 .hero h2{
@@ -93,42 +96,6 @@ nav a:hover, .hero .cancel-subscription:hover{
 .cancel-subscription{
     color: black;
     display: block;
-}
-
-.c-40{
-    width: calc(40% - 40px);
-    margin: 0 auto;
-    float: left;
-    padding-right: 40px;
-}
-
-.c-40 span, .c-40 div{
-    font-size: 0.8em;
-    font-weight: bold;
-}
-
-.c-40 div{
-    margin-top: 25px;
-}
-
-.c-40 div a:last-of-type{
-    font-size: 0.8em;
-    margin-top: 10px;
-}
-
-.c-40 svg{
-    margin-top: 30px;
-    width: 7%;
-}
-
-.c-60{
-    width: 60%;
-    margin: 0 auto;
-    float: left;
-}
-
-.c-60 img{
-    width: 100%;
 }
 
 /* SEZIONI */
@@ -147,20 +114,10 @@ nav a:hover, .hero .cancel-subscription:hover{
     margin-right: 20px;
 }
 
-.plan-column{
-    width: calc(100% / 3 - 60px);
-    margin: 35px 30px;
-    float: left;
-}
-
 .plan-type{
     padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid #d0d0d3;
-}
-
-#single::before{
-    content: "\1F464";
 }
 
 .plan-type span::before{
@@ -199,7 +156,7 @@ nav a:hover, .hero .cancel-subscription:hover{
     content: "\20AC";
 }
 
-#users::before{
+.users::before{
     content: "\1F464";
 }
 
@@ -285,27 +242,6 @@ nav a:hover, .hero .cancel-subscription:hover{
     padding: 7px 20%;
 }
 
-.c-55{
-    width: 55%;
-    float: left;
-}
-
-.c-55 img{
-    width: 95%;
-    margin: 0 auto;
-}
-
-.c-45{
-    width: calc(45% - 60px);
-    float: left;
-    margin: 0 30px;
-}
-
-.c-45 h3{
-    font-size: 1.6em;
-    padding: 40px 0;
-}
-
 .button-partner{
     border: 1px solid black;
     padding: 7px 15px;
@@ -315,12 +251,16 @@ nav a:hover, .hero .cancel-subscription:hover{
     margin-top: 40px;
 }
 
-.plan-column img{
-    width: 100%;
+.container .clients{
+    width: 40%;
+    margin-bottom: 2%;
 }
 
-.plan-column h4{
-    font-size: 1.5em;
-    padding-bottom: 20px;
+.container .clients h2{
+    font-size: 2em;
 }
 
+.container .clients a{
+    color: #0061ff;
+    text-decoration: underline;
+}

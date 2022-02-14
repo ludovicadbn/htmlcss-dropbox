@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/columns.css">
     <link rel="stylesheet" href="./assets/css/utility.css">
     <title>Document</title>
 </head>
@@ -79,16 +80,16 @@
                 <label for="fatturazione2">Fatturazione annuale</label>
             </div>
             <div class="clearfix">
-                <div class="plan-column border-gray pb-10">
+                <div class="column-33 border-gray pb-10">
                     <div class="plan-type">
-                        <span id="single">Singolo</span>
+                        <span class="users" >Singolo</span>
                     </div>
                     <div class="plan-details">
                         <h3>Professional</h3>
                         <span class="price">19,99</span>
                         <span class="f-gray">/mese</span>
                         <ul>
-                            <li id="users">
+                            <li class="users">
                                 1 Utente
                             </li>
                             <li id="storage">
@@ -130,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="plan-column border-gray pb-10">
+                <div class="column-33 border-gray pb-10">
                     <div class="plan-type">
                         <span>Team</span>
                     </div>
@@ -139,7 +140,7 @@
                         <span class="price">19,99</span>
                         <span class="f-gray">/ utente / mese, a partire da 3 utenti</span>
                         <ul>
-                            <li id="users">
+                            <li class="users">
                                 1 Utente
                             </li>
                             <li id="storage">
@@ -181,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="plan-column border-gray pb-10">
+                <div class="column-33 border-gray pb-10">
                     <div class="plan-type">
                         <span>Team</span>
                     </div>
@@ -190,7 +191,7 @@
                         <span class="price">19,99</span>
                         <span class="f-gray">/mese</span>
                         <ul>
-                            <li id="users">
+                            <li class="users">
                                 1 Utente
                             </li>
                             <li id="storage">
@@ -265,33 +266,33 @@
         <section class="container clearfix">
             <!-- TODO dropbox business -->
             <h2>Esegui più operazioni con Dropbox Business</h2>
-            <div class="plan-column">
+            <div class="column-33">
                 <img src="./assets/img/business-feature-switching-tools.png" alt="business feature switching tools">
                 <h4>Passa di meno da uno strumento all'altro</h4>
                 <span>Porta a termine le attività quotidiane con un solo strumento. Crea modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</span>
             </div>
-            <div class="plan-column">
+            <div class="column-33">
                 <img src="./assets/img/business-feature-coordinate-it.png" alt="business feature switching tools">
                 <h4>Passa di meno da uno strumento all'altro</h4>
                 <span>Porta a termine le attività quotidiane con un solo strumento. Crea modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</span>
             </div>
-            <div class="plan-column">
+            <div class="column-33">
                 <img src="./assets/img/business-feature-multi-device.png" alt="business feature switching tools">
                 <h4>Passa di meno da uno strumento all'altro</h4>
                 <span>Porta a termine le attività quotidiane con un solo strumento. Crea modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</span>
             </div>
-            <div class="plan-column">
+            <div class="column-33">
                 <img src="./assets/img/business-feature-integrations-it.png" alt="business feature switching tools">
                 <h4>Passa di meno da uno strumento all'altro</h4>
                 <span>Porta a termine le attività quotidiane con un solo strumento. Crea modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</span>
             </div>
             </div>
-            <div class="plan-column">
+            <div class="column-33">
                 <img src="./assets/img/business-feature-send-files-it.png" alt="business feature switching tools">
                 <h4>Passa di meno da uno strumento all'altro</h4>
                 <span>Porta a termine le attività quotidiane con un solo strumento. Crea modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</span>
             </div>
-            <div class="plan-column">
+            <div class="column-33">
                 <img src="./assets/img/business-feature-security.png" alt="business feature switching tools">
                 <h4>Passa di meno da uno strumento all'altro</h4>
                 <span>Porta a termine le attività quotidiane con un solo strumento. Crea modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</span>
@@ -299,7 +300,36 @@
 
         </section>
         <section>
-            <!-- TODO partner -->
+            <!-- TODO clients -->
+            <div class="container">
+                <div class="clients">
+                    <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
+                    <a href="#">Scopri di più sui nostri clienti</a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="c-25">
+                    <img src="./assets/img/designit.svg" alt="designit logo">
+                    <img src="./assets/img/university_of_florida.svg" alt="university of florida logo">
+                </div>
+                <div class="c-25">
+                    <img src="./assets/img/arizona_state_university.svg" alt="arizona state university logo">
+                    <img src="./assets/img/topps.svg" alt="topps logo">
+                </div>
+                <div class="c-50 bg-lightgray">
+                    <img src="./assets/img/designit.svg" alt="designit logo">
+                    <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper."</p>
+                    <span>Morten Thomsen, Global IT Lead</span>
+                </div>
+                <div class="c-25">
+                    <img src="./assets/img/world_bicycle_relief.svg" alt="world bicycle relief logo">
+                    <img src="./assets/img/lonely_planet.svg" alt="lonely planet logo">
+                </div>
+                <div class="c-25">
+                    <img src="./assets/img/hearst_corp.svg" alt="hearst corp logo">
+                    <img src="./assets/img/clear_channel.svg" alt="clear channel logo">
+                </div>
+            </div>
         </section>
         <section>
             <!-- TODO FAQ -->
