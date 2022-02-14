@@ -213,11 +213,6 @@ nav a:hover, .hero .cancel-subscription:hover{
     color: #0061ff;
 }
 
-.pack.standard li:last-of-type::before{
-    content: ".";
-    color: white;
-}
-
 .plan-row{
     width: 95%;
     margin: 0 auto 5%;
