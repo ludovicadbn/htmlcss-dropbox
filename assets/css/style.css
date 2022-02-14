@@ -110,7 +110,7 @@ nav a:hover, .hero .cancel-subscription:hover{
 }
 
 .container h2{
-    font-size: 2.3em;
+    font-size: 2em;
 }
 
 .margin-h2-container{
@@ -122,13 +122,15 @@ nav a:hover, .hero .cancel-subscription:hover{
 }
 
 .container .clients{
-    width: 46%;
+    width: 50%;
     margin-bottom: 2%;
 }
 
 .container .clients a{
     color: #0061ff;
     text-decoration: underline;
+    margin-bottom: 5%;
+    font-size: 0.8em;
 }
 
 .container .faq{
@@ -264,6 +266,36 @@ nav a:hover, .hero .cancel-subscription:hover{
     margin-top: 40px;
 }
 
+.big-square{
+    width: 30%;
+    margin: 0 auto;
+    float: left;
+}
+
+.square{
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    height: 190px;
+    float: left;
+}
+
+.client-quote{
+    width: calc(40% - 40px);
+    padding: 2.5% 2.5% 8% 2.5%;
+    float: left;
+    overflow-y: auto;
+}
+
+.client-quote img{
+    width: 22%;
+    margin-bottom: 10%;
+}
+
+.client-quote p{
+    margin-bottom: 10%;
+}
+
 #designit{
     background-color: #a2d39b;
     border: 10px solid #cbe7c7;
@@ -316,4 +348,21 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 .faq .fa-angle-down{
     float: right;
+}
+
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#language{
+    border-top: 1px solid #6d6d6d;
+    width: 11%;
+}
+
+#language a{
+    color: #6d6d6d;
+    margin: 30% 0;
+    display: inline-block;
+    font-size: 0.8em;
 }
