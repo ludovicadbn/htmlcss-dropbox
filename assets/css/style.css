@@ -30,6 +30,10 @@ nav li, .purchase span, a{
     display: inline-block;
 }
 
+.c-40 .f-black, .plan-details .f-gray{
+    display: block;
+}
+
 .menu-topleft, .menu-topright{
     width: 50%;
     padding: 1.5% 0;
