@@ -1,13 +1,12 @@
 .c-40{
-    width: calc(40% - 40px);
+    width: calc(40% - 50px);
     margin: 0 auto;
     float: left;
-    padding-right: 40px;
+    padding-right: 50px;
 }
 
-.c-40 span, .c-40 div{
-    font-size: 0.8em;
-    font-weight: bold;
+.c-40 .f-black{
+    display: block;
 }
 
 .c-40 div{
@@ -15,8 +14,8 @@
 }
 
 .c-40 div a:last-of-type{
-    font-size: 0.8em;
     margin-top: 10px;
+    font-size: 0.75em;
 }
 
 .c-40 svg{
@@ -35,8 +34,8 @@
 }
 
 .column-33{
-    width: calc(100% / 3 - 60px);
-    margin: 35px 30px;
+    width: calc(100% / 3 - 40px);
+    margin: 35px 20px;
     float: left;
 }
 
@@ -45,7 +44,7 @@
 }
 
 .column-33 h4{
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-bottom: 20px;
 }
 

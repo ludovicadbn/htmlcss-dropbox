@@ -26,6 +26,14 @@
     color: #7a8793;
 }
 
+.f-bold{
+    font-weight: bold;
+}
+
+.t-right{
+    text-align: right;
+}
+
 .border-gray{
     border: 1px solid #d0d0d3;
 }

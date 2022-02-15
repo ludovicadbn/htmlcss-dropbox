@@ -20,23 +20,102 @@ img{
     clear: both;
 }
 
-a{
+/* PROPRIETA' CON PIU' CLASSI */
+li, a{
+    list-style-type: none;
     text-decoration: none;
+}
+
+nav li, .purchase span, a{
     display: inline-block;
 }
 
-li{
-    list-style-type: none;
+.menu-topleft, .menu-topright{
+    width: 50%;
+    padding: 1.5% 0;
+    float: left;
 }
 
-.button{
+.menu-topright .button, .c-40 .button, .trial .button, .plan-contact-us .button{
     background-color: #0061ff;
-    padding: 7px 15px;
-    color: white;
 }
 
-.button:hover{
+.purchase a, .container .clients a{
+    color: #0061ff;
+}
+
+nav a:hover, .hero .c-40 .f-black:hover{
+    text-decoration: underline;
+}
+
+nav a, .plan-contact-us, #language a, .purchase a, .container .clients a, .enterprise div, .purchase span, .trial, .plan-details .f-gray, .c-40{
+    font-size: 0.8em;
+}
+
+.container h2, .container .faq h3{
+    font-size: 2em;
+}
+
+.container .faq div:last-of-type, .plan-type, .purchase span{
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.enterprise div, .plan-contact-us{
+    padding: 30px 0;
+}
+
+.margin-h2-container, .container .faq h3{
+    margin: 8% 0 5%;
+}
+
+.client-quote p, .client-quote img{
+    margin-bottom: 10%;
+}
+/* FINE PROPRIETA' CON PIU' CLASSI */
+
+/* LINK */
+.button{
+    padding: 7px 15px;
+}
+
+.button.f-white:hover{
     background-color: #367be9;
+}
+
+.button.f-black{
+    border: 1px solid #000;
+    margin-top: 40px;
+}
+
+nav a{
+    margin: 0 15px;
+    color: black;
+}
+
+.container .clients a{
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+.plan-contact-us a{
+    padding: 7px 20%;
+}
+
+.plan-contact-us{
+    width: 35%;
+    float: left;
+    text-align: center;
+}
+
+.bg-lightblue .container a{
+    margin-top: 10%;
+    float: left;
+    padding: 5px 40px;
+}
+
+#language a{
+    color: #6d6d6d;
+    margin: 30% 0;
 }
 
 /* NAV */
@@ -48,40 +127,10 @@ nav{
     z-index: 500;
 }
 
-nav li{
-    list-style-type: none;
-    display: inline-block;
-}
-
-nav a{
-    margin: 0 15px;
-    color: black;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-
-nav a:hover, .hero .cancel-subscription:hover{
-    text-decoration: underline;
-    color: black;
-}
-
-.menu-topleft{
-    width: 50%;
-    padding: 1.5% 0;
-    float: left;
-}
-
 .logo{
     float: left;
     width: 15%;
     margin: 0 15px;
-}
-
-.menu-topright{
-    width: 50%;
-    padding: 1.5% 0;
-    float: left;
-    text-align: right;
 }
 
 /* HERO */
@@ -97,24 +146,11 @@ nav a:hover, .hero .cancel-subscription:hover{
     font-size: 3.9em;
 }
 
-.cancel-subscription{
-    color: black;
-    display: block;
-}
-
 /* SEZIONI */
 
 .container{
     width: 70%;
     margin: 0 auto;
-}
-
-.container h2{
-    font-size: 2em;
-}
-
-.margin-h2-container{
-    margin: 8% 0 5%;
 }
 
 .container label{
@@ -126,20 +162,8 @@ nav a:hover, .hero .cancel-subscription:hover{
     margin-bottom: 2%;
 }
 
-.container .clients a{
-    color: #0061ff;
-    text-decoration: underline;
-    margin-bottom: 5%;
-    font-size: 0.8em;
-}
-
 .container .faq{
     margin-bottom: 10%;
-}
-
-.container .faq h3{
-    margin: 10% 0 5%;
-    font-size: 2em;
 }
 
 .container .faq div{
@@ -149,14 +173,9 @@ nav a:hover, .hero .cancel-subscription:hover{
     padding: 3% 0;
 }
 
-.container .faq div:last-of-type{
-    border-bottom: 1px solid #d0d0d3;
-}
-
 .plan-type{
     padding: 10px 0;
     text-align: center;
-    border-bottom: 1px solid #d0d0d3;
 }
 
 .plan-details{
@@ -164,17 +183,8 @@ nav a:hover, .hero .cancel-subscription:hover{
     margin: 30px auto 0;
 }
 
-.plan-details h3{
-    padding: 0px 0 15px;
-}
-
-.plan-details span{
-    display: block;
-}
-
 .plan-details .f-gray{
     padding: 5px 0 15px;
-    font-size: 0.8em;
 }
 
 .plan-details ul li{
@@ -182,26 +192,13 @@ nav a:hover, .hero .cancel-subscription:hover{
     margin: 20px 0;
 }
 
-.price{
-    font-weight: bold;
-}
-
 .trial{
     margin: 30px 0 20px;
-    font-size: 0.8em;
     text-align: center;
 }
 
-.purchase a{
-    color: #0061ff;
-    font-size: 0.8em;
-}
-
 .purchase span{
-    display: inline-block;
-    font-size: 0.8em;
     padding-bottom: 20px;
-    border-bottom: 1px solid #d0d0d3;
 }
 
 .pack h5{
@@ -224,41 +221,13 @@ nav a:hover, .hero .cancel-subscription:hover{
 }
 
 .enterprise{
-    width: 70%;
+    width: 65%;
     float: left;
 }
 
 .enterprise h3{
     font-size: 1.6em;
-    padding: 30px 0 20px
-}
-
-.enterprise span{
-    font-weight: bold;
-}
-
-.enterprise div{
-    padding: 30px 0;
-    font-size: 0.85em;
-}
-
-.plan-contact-us{
-    width: 30%;
-    float: left;
-    padding: 30px 0;
-    text-align: center;
-    font-size: 0.9em;
-    font-weight: bold;
-}
-
-.plan-contact-us a{
-    padding: 7px 20%;
-}
-
-.button-partner{
-    border: 1px solid black;
-    padding: 7px 15px;
-    margin-top: 40px;
+    padding: 30px 0 20px;
 }
 
 .big-square{
@@ -292,13 +261,30 @@ nav a:hover, .hero .cancel-subscription:hover{
 
 .client-quote img{
     width: 22%;
-    margin-bottom: 10%;
 }
 
-.client-quote p{
-    margin-bottom: 10%;
+.bg-lightblue .container h2{
+    width: calc(65% - 25%);
+    margin: 10% 25% 10% 0;
+    color: #61082b;
+    float: left;
 }
 
+.faq .fa-angle-down{
+    float: right;
+}
+
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#language{
+    border-top: 1px solid #6d6d6d;
+    width: 11%;
+}
+
+/* CLIENTS LOGOS */
 #designit{
     background-color: #a2d39b;
     border: 10px solid #cbe7c7;
@@ -335,41 +321,4 @@ nav a:hover, .hero .cancel-subscription:hover{
 #clear-channel{
     background-color: #ffd830;
     padding-top: 6%;
-}
-
-.bg-lightblue .container h2{
-    width: calc(65% - 25%);
-    margin: 10% 25% 10% 0;
-    color: #61082b;
-    float: left;
-}
-
-.bg-lightblue .container a{
-    margin-top: 10%;
-    float: left;
-    background-color: #fff;
-    padding: 5px 40px;
-    color: #000;
-    font-weight: bold;
-}
-
-.faq .fa-angle-down{
-    float: right;
-}
-
-.footer-container{
-    width: 80%;
-    margin: 0 auto;
-}
-
-#language{
-    border-top: 1px solid #6d6d6d;
-    width: 11%;
-}
-
-#language a{
-    color: #6d6d6d;
-    margin: 30% 0;
-    display: inline-block;
-    font-size: 0.8em;
 }
