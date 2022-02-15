@@ -48,7 +48,7 @@ nav a:hover, .hero .c-40 .f-black:hover{
     text-decoration: underline;
 }
 
-nav a, .plan-contact-us, #language a, .purchase a, .container .clients a, .enterprise div, .purchase span, .trial, .plan-details .f-gray, .c-40{
+nav a, .plan-contact-us, #language a, .purchase a, .container .clients a, .enterprise div, .purchase span, .trial, .plan-details .f-gray, .c-40, .c-20 ul li a{
     font-size: 0.8em;
 }
 
