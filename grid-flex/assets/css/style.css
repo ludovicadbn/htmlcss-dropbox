@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 a,
@@ -15,6 +16,10 @@ li{
 .link a{
     display: block;
     padding-bottom: 5%;
+}
+
+label{
+    padding-right: 15px;
 }
 
 /* BODY */
@@ -79,7 +84,8 @@ nav{
     flex-basis: 60%;
 }
 
-.hero .hero-content img{
+.hero .hero-content img,
+.multifunctional img{
     width: 100%;
 }
 
@@ -166,7 +172,7 @@ nav{
 
 .purchase a{
     font-size: 0.8rem;
-    color: blue;
+    color: #0061ff;
     text-decoration: underline;
 }
 
@@ -205,8 +211,258 @@ nav{
     font-size: 0.8rem;
 }
 
+.partner{
+    display: flex;
+    width: 70%;
+    margin: 15% auto 5%;
+}
 
+.partner > div:first-of-type{
+    flex-basis: 60%;
+}
 
+.partner > div:last-of-type{
+    flex-basis: 40%;
+}
+
+.partner img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.partner div:last-of-type h3{
+    margin: 10% 0;
+}
+
+.partner div:last-of-type div{
+    margin-top: 10%;
+}
+
+.multifunctional{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "one one one"
+    "two three four"
+    "five six seven";
+    column-gap: 5%;
+    row-gap: 10%;
+}
+
+.multifunctional > div:nth-of-type(1){grid-area: one;}
+.multifunctional > div:nth-of-type(2){grid-area: two;}
+.multifunctional > div:nth-of-type(3){grid-area: three;}
+.multifunctional > div:nth-of-type(4){grid-area: four;}
+.multifunctional > div:nth-of-type(5){grid-area: five;}
+.multifunctional > div:nth-of-type(6){grid-area: six;}
+.multifunctional > div:nth-of-type(7){grid-area: seven;}
+
+.multifunctional h2{
+    font-size: 1.5rem;
+}
+
+.multifunctional h4{
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+}
+
+.clients{
+    margin: 15% 0 10%;
+    display: grid;
+    grid-template-areas:
+    ". client-title client-title . . ."
+    "logo1 logo2 quote quote logo5 logo6"
+    "logo3 logo4 quote quote logo7 logo8"
+    "trial trial trial trial trial trial";
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    aspect-ratio: 1.5;
+}
+
+.clients > div:nth-of-type(1){grid-area: client-title;}
+.clients > div:nth-of-type(2){grid-area: logo1;}
+.clients > div:nth-of-type(3){grid-area: logo2;}
+.clients > div:nth-of-type(4){grid-area: logo3;}
+.clients > div:nth-of-type(5){grid-area: logo4;}
+.clients > div:nth-of-type(6){grid-area: quote;}
+.clients > div:nth-of-type(7){grid-area: logo5;}
+.clients > div:nth-of-type(8){grid-area: logo6;}
+.clients > div:nth-of-type(9){grid-area: logo7;}
+.clients > div:nth-of-type(10){grid-area: logo8;}
+.clients > div:nth-of-type(11){grid-area: trial;}
+
+.clients img{
+    width: 60%;
+}
+
+.client-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logo img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(46deg) brightness(108%) contrast(102%);
+}
+
+.client-title{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 20% 0 0;
+}
+
+.client-title a{
+    font-size: 0.9rem;
+    color: #0061ff;
+    text-decoration: underline;
+    margin: 5% 0;
+}
+
+.client-title h2{
+    font-size: 1.9rem;
+    flex-basis: 100%;
+}
+
+.quote{
+    padding: 8%;
+}
+
+.quote img{
+    width: 25%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.quote p{
+    padding: 5% 0;
+}
+
+.contact-us{
+    color: #61082b;
+    background-color: #b4d0e7;
+    display: flex;
+    align-items: center;
+}
+
+.contact-us div{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq{
+    width: 70%;
+    margin: 0 auto 10%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.faq h3{
+    font-size: 1.4rem;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.faq div{
+    padding: 2.5% 0;
+    border-bottom: 1px solid #d0d0d3;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: #000;
+}
+
+.menu-footer{
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "dropbox prodotti azienda supporto community"
+    "language . . . .";
+    gap: 5%;
+    padding: 5% 0;
+}
+
+.menu-footer > div:nth-of-type(2){grid-area: prodotti;}
+.menu-footer > div:nth-of-type(1){grid-area: dropbox;}
+.menu-footer > div:nth-of-type(3){grid-area: azienda;}
+.menu-footer > div:nth-of-type(4){grid-area: supporto;}
+.menu-footer > div:nth-of-type(5){grid-area: community;}
+.menu-footer > div:nth-of-type(6){grid-area: language;}
+
+.menu-footer div ul li a{
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.menu-footer div ul{
+    margin: 10% 0 30%;
+}
+
+.menu-footer div h5{
+    font-size: 0.9rem;
+}
+
+#language a{
+    color: #6d6d6d;
+}
+
+#language{
+    padding-top: 20%;
+    border-top: 1px solid #6d6d6d;
+    font-size: 0.8rem;
+}
+
+/* CLIENTS LOGOS */
+#quote{
+    background-color: #f5f5f5;
+}
+
+#designit{
+    background-color: #a2d39b;
+    border: 10px solid #cbe7c7;
+    box-sizing: border-box;
+}
+
+#uniflorida{
+    background-color: #0093ce;
+}
+
+#uniarizona{
+    background-color: #61082b;
+    padding-top: 10%;
+}
+
+#topps{
+    background-color: #ee1a1a;
+    padding-top: 4%;
+}
+
+#world-bicycle{
+    background-color: #d5001f;
+}
+
+#lonely-planet{
+    background-color: #0d2481;
+    padding-top: 4%;
+}
+
+#hearst-corp{
+    background-color: #b4d0e7;
+}
+
+#clear-channel{
+    background-color: #ffd830;
+    padding-top: 6%;
+}
 
 
 
