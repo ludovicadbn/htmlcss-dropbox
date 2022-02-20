@@ -13,13 +13,75 @@ li{
     list-style-type: none;
 }
 
-.link a{
-    display: block;
+label{
+    padding-right: 15px;
+}
+
+/* COMMON PROPERTIES */
+.link a:nth-of-type(2),
+.menu-footer div ul li a,
+.plan-details ul li,
+.trial a{
+    font-size: 0.7rem;
+}
+
+nav,
+.link a:first-of-type,
+.plan-details span:nth-of-type(2),
+.trial,
+.purchase span,
+.purchase a,
+.plan-enterprise div,
+.plan-enterprise a,
+#language{
+    font-size: 0.8rem;
+}
+
+.menu-footer div h5,
+.hero .hero-content,
+.plan-details > span:first-of-type,
+.plan-enterprise span,
+.client-title a,
+.contact-us a,
+.faq div{
+    font-size: 0.9rem;
+}
+
+.plan-details h3,
+.plan-details ul li{
+    margin-bottom: 5%;
+}
+
+.hero .hero-content span,
+.multifunctional h4,
+.quote img,
+.faq h3{
     padding-bottom: 5%;
 }
 
-label{
-    padding-right: 15px;
+nav a:hover,
+footer a:hover{
+    text-decoration: underline;
+}
+
+.menu-top-right a:last-of-type:hover,
+.trial a:hover,
+.link a:first-of-type:hover,
+.plan-enterprise a:hover{
+    background-color: #508ae7;
+}
+
+.plan-type,
+.purchase span,
+.quote img,
+.faq h3,
+.faq div{
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.hero .hero-content img,
+.multifunctional img{
+    width: 100%;
 }
 
 /* BODY */
@@ -32,16 +94,19 @@ nav{
     left: 0;
     right: 0;
     background-color: #fff;
-    font-size: 0.8rem;
     font-weight: bold;
     z-index: 500;
 }
 
-.menu-top-left{
+.menu-top-left,
+.menu-top-right{
     display: flex;
-    flex-basis: 35%;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu-top-left{
+    flex-basis: 35%;
 }
 
 .menu-top-left img.logo{
@@ -49,10 +114,13 @@ nav{
 }
 
 .menu-top-right{
-    display: flex;
     flex-basis: 30%;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.menu-top-right a:last-of-type{
+    color: #fff;
+    background-color: #0061ff;
+    padding: 1.5% 5%;
 }
 
 .hero{
@@ -73,7 +141,6 @@ nav{
 
 .hero .hero-content{
     display: flex;
-    font-size: 0.9rem;
 }
 
 .hero .hero-content div:first-of-type{
@@ -84,15 +151,26 @@ nav{
     flex-basis: 60%;
 }
 
-.hero .hero-content img,
-.multifunctional img{
-    width: 100%;
+.link a:nth-of-type(2),
+.link a:nth-of-type(3){
+    display: block;
+    margin: 5% 0 0;
+}
+
+.link a:first-of-type{
+    color: #fff;
+    background-color: #0061ff;
+    padding: 1%;
+    padding: 1.5% 5%;
+}
+
+.fa-arrow-down{
+    font-size: 1.8rem;
 }
 
 .hero .hero-content span{
     display: block;
     width: 89%;
-    padding-bottom: 5%;
 }
 
 .plans {
@@ -104,6 +182,7 @@ nav{
     "professional standard advanced"
     "enterprise enterprise enterprise";
     gap: 5%;
+    grid-auto-columns: 1fr;
 }
 
 .plans > div:nth-child(2),
@@ -127,7 +206,6 @@ nav{
 .plan-type{
     padding: 10px 0;
     text-align: center;
-    border-bottom: 1px solid #d0d0d3;
 }
 
 .plan-details{
@@ -135,43 +213,34 @@ nav{
     margin: 10% auto 0;
 }
 
-.plan-details h3{
-    margin-bottom: 5%;
-}
-
 .plan-details > span:first-of-type{
     font-weight: bold;
     margin: 3% 0;
-    font-size: 0.9rem;
 }
 
 .plan-details span:nth-of-type(2){
     display: block;
     color: #7a8793;
-    font-size: 0.8rem;
     margin: 5% 0 15%;
 }
 
-.plan-details ul li{
-    font-size: 0.7rem;
-    margin-bottom: 5%;
-}
-
 .trial{
-    font-size: 0.8rem;
     font-weight: bold;
     text-align: center;
     margin: 30px 0 20px;
 }
 
+.trial a{
+    color: white;
+    background-color: #0061ff;
+    padding: 4% 15%;
+}
+
 .purchase span{
-    border-bottom: 1px solid #d0d0d3;
     padding-bottom: 20px;
-    font-size: 0.8rem;
 }
 
 .purchase a{
-    font-size: 0.8rem;
     color: #0061ff;
     text-decoration: underline;
 }
@@ -202,13 +271,17 @@ nav{
 .plan-enterprise span{
     display: block;
     font-weight: bold;
-    font-size: 0.9rem;
 }
 
 .plan-enterprise div{
     margin-top: 2%;
     width: 75%;
-    font-size: 0.8rem;
+}
+
+.plan-enterprise a{
+    color: #fff;
+    background-color: #0061ff;
+    padding: 1% 3%;
 }
 
 .partner{
@@ -238,6 +311,11 @@ nav{
     margin-top: 10%;
 }
 
+.partner div:last-of-type div a{
+    border: 1px solid #000;
+    padding: 1.5% 5%;
+}
+
 .multifunctional{
     width: 70%;
     margin: 0 auto;
@@ -264,7 +342,6 @@ nav{
 
 .multifunctional h4{
     font-size: 1.2rem;
-    padding-bottom: 5%;
 }
 
 .clients{
@@ -314,7 +391,6 @@ nav{
 }
 
 .client-title a{
-    font-size: 0.9rem;
     color: #0061ff;
     text-decoration: underline;
     margin: 5% 0;
@@ -331,8 +407,6 @@ nav{
 
 .quote img{
     width: 25%;
-    padding-bottom: 5%;
-    border-bottom: 1px solid #d0d0d3;
 }
 
 .quote p{
@@ -353,6 +427,11 @@ nav{
     justify-content: space-between;
 }
 
+.contact-us a{
+    background-color: #fff;
+    padding: 0.5% 4%;
+}
+
 .faq{
     width: 70%;
     margin: 0 auto 10%;
@@ -363,14 +442,10 @@ nav{
 
 .faq h3{
     font-size: 1.4rem;
-    padding-bottom: 5%;
-    border-bottom: 1px solid #d0d0d3;
 }
 
 .faq div{
     padding: 2.5% 0;
-    border-bottom: 1px solid #d0d0d3;
-    font-size: 0.9rem;
     display: flex;
     justify-content: space-between;
 }
@@ -400,15 +475,10 @@ footer{
 
 .menu-footer div ul li a{
     color: #fff;
-    font-size: 0.7rem;
 }
 
 .menu-footer div ul{
     margin: 10% 0 30%;
-}
-
-.menu-footer div h5{
-    font-size: 0.9rem;
 }
 
 #language a{
@@ -418,7 +488,6 @@ footer{
 #language{
     padding-top: 20%;
     border-top: 1px solid #6d6d6d;
-    font-size: 0.8rem;
 }
 
 /* CLIENTS LOGOS */
