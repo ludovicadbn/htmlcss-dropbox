@@ -505,6 +505,287 @@ footer{
     padding-top: 6%;
 }
 
+/* MEDIA */
+@media screen and (max-width: 500px){
+    nav{
+        flex-direction: column;
+        padding: 1% 2%;
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        z-index: 0;
+    }
+
+    .menu-top-right a:last-of-type{
+        background-color: #0061ff;
+        padding: 1% 4%;
+    }
+
+    .hero > div{
+        bottom: 0px;
+        padding: 5% 0;
+    }
+
+    .hero div h1{
+        font-size: 1.8rem;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .container h2,
+    .faq h3{
+        font-size: 1.2rem;
+    }
+
+    .container#plans div label{
+        font-size: 0.8rem;
+    }
+
+    .container#plans div input{
+        margin-top: 3%;
+    }
+
+    label{
+        padding-right: 5px;
+    }
+
+    .column-3{
+        justify-content: unset;
+        column-gap: 0%;
+    }
+
+    .column-3 > div,
+    .partner > div:last-of-type,
+    .hero .hero-content div:first-of-type{
+        flex-basis: 100%;
+    }
+
+    .pack ul{
+        padding-bottom: 10%;
+    }
+
+    .plan-enterprise span,
+    .partner > div:first-of-type,
+    .hero .hero-content div:last-of-type,
+    .quote,
+    .contact-us a{
+        display: none;
+    }
+
+    .plan-enterprise h3{
+        margin-right: 20%;
+        font-size: 1.1rem;
+    }
+
+    .plan-details ul li,
+    .partner div:last-of-type div{
+        font-size: 0.8rem;
+    }
+
+    .plan-details span:nth-of-type(2){
+        margin: 5% 0 5%;
+    }
+
+    .trial{
+        margin: 20px 0 15px;
+    }
+
+    .trial a{
+        padding: 3% 15%;
+    }
+
+    .partner{
+        width: 80%;
+        margin: 0% auto 10%;
+    }
+
+    .bigsquare{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .bigsquare > div{
+        flex-basis: 100%;
+        height: 210px;
+    }
+
+    .contact-us div,
+    .menu-footer{
+        width: 85%;
+    }
+
+    .contact-us h2{
+        font-size: 1.1rem;
+    }
+
+    .faq div{
+        font-size: 0.7rem;
+    }
+    
+    .menu-footer-flex{
+        flex-wrap: wrap;
+    }
+
+    .menu-footer-flex > div{
+        margin-bottom: 5%;
+    }
+
+    #language{
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+    nav{
+        flex-direction: column;
+        padding: 1% 2%;
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
+        z-index: 0;
+    }
+
+    nav a{
+        font-size: 1rem;
+    }
+
+    .menu-top-right a:last-of-type{
+        background-color: #0061ff;
+        padding: 0.5% 4%;
+    }
+
+    .hero > div{
+        bottom: 0px;
+        padding: 5% 0;
+    }
+
+    .hero div h1{
+        font-size: 2.2rem;
+    }
+
+    .container{
+        width: 75%;
+    }
+
+    .container h2,
+    .faq h3{
+        font-size: 1.4rem;
+    }
+
+    .container#plans div label{
+        font-size: 0.9rem;
+    }
+
+    .container#plans div input{
+        margin-top: 3%;
+    }
+
+    label{
+        padding-right: 5px;
+    }
+
+    .column-3{
+        justify-content: unset;
+        column-gap: 0%;
+    }
+
+    .column-3 img{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .column-3 > div,
+    .partner > div:last-of-type,
+    .hero .hero-content div:first-of-type{
+        flex-basis: 100%;
+    }
+
+    .pack ul{
+        padding-bottom: 10%;
+    }
+
+    .plan-enterprise span,
+    .partner > div:first-of-type,
+    .hero .hero-content div:last-of-type,
+    .quote{
+        display: none;
+    }
+
+    .plan-enterprise h3{
+        margin-right: 30%;
+        font-size: 1.1rem;
+    }
+
+    .plan-details ul li,
+    .partner div:last-of-type div{
+        font-size: 0.9rem;
+    }
+
+    .partner div:last-of-type div{
+        margin-top: 6%;
+    }
+
+    .plan-details span:nth-of-type(2){
+        margin: 5% 0 5%;
+    }
+
+    .trial{
+        margin: 20px 0 15px;
+    }
+
+    .trial a{
+        padding: 1.5% 15%;
+    }
+
+    .partner{
+        width: 80%;
+        margin: 0% auto 10%;
+    }
+
+    .partner div:last-of-type h3{
+        margin: 5% 0;
+    }
+
+    .bigsquare{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .bigsquare > div{
+        flex-basis: 50%;
+        min-height: 125px;
+    }
+
+    .contact-us div,
+    .menu-footer{
+        width: 85%;
+    }
+
+    .contact-us h2{
+        font-size: 1.1rem;
+    }
+
+    .faq div{
+        font-size: 0.8rem;
+    }
+    
+    .menu-footer-flex{
+        flex-wrap: wrap;
+    }
+
+    .menu-footer-flex > div{
+        margin-bottom: 5%;
+    }
+
+    #language{
+        padding-bottom: 5%;
+    }
+}
+
 
 
 
