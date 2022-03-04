@@ -1,0 +1,84 @@
+*{font-family: sans-serif; scroll-behavior: smooth;}
+
+.d-none{display: none;}
+
+.topnav {overflow: hidden; background-color: #fff; position: relative;}
+.topnav #myLinks {display: none;}
+.topnav a {color: #000; font-weight: bold; margin: 0.8em; display: block;}
+.topnav .sign-in a{color: #fff; padding: .35rem .7rem;}
+.topnav .containainer{position: relative;}
+
+.topnav a.icon {
+    background: #fff;
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    color: #000;
+}
+
+.bg-blue{background-color: #0061ff;}
+.text-blue{color: #0061ff;}
+.text-gray{color: #7a8793;}
+
+.hero{background-color: #b4d0e7;}
+
+.container#plans .col-12 > div:nth-child(1),
+.container#plans .col-12 > div:nth-child(2),
+.container#plans .col-12 > div:nth-child(3),
+.enterprise{
+    border: 1px solid #d0d0d3;
+}
+
+.plan-type{
+    border-bottom: 1px solid #d0d0d3;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.plan-details{width: 80%; margin: 10% auto 0;}
+.plan-enterprise{width: 95%; margin: 3% auto;}
+
+.purchase span{border-bottom: 1px solid #d0d0d3;}
+
+.pack ul li::before {
+    content: "\2714";
+    color: #0061ff;
+}
+
+@media screen and (min-width: 36em) {
+    
+}
+
+@media screen and (min-width: 48em) {
+    
+}
+
+@media screen and (min-width: 62em) {
+    d-none{display: unset;}
+
+    .hero > div{
+        width: 78%;
+        margin: 0 auto 10%;
+        position: relative;
+        bottom: -70px;
+    }
+    
+}
+
+@media screen and (min-width: 75em) {
+    
+    .topnav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        font-weight: bold;
+        z-index: 500;
+    }
+}
+
+@media screen and (min-width: 90em) {
+    
+}
