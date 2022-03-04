@@ -1,6 +1,7 @@
 *{font-family: sans-serif; scroll-behavior: smooth;}
 
 .d-none{display: none;}
+.w-80{width: 80%;}
 
 .topnav {overflow: hidden; background-color: #fff; position: relative;}
 .topnav #myLinks {display: none;}
@@ -44,6 +45,10 @@
 .pack ul li::before {
     content: "\2714";
     color: #0061ff;
+}
+
+.partner div:last-of-type div a{
+    border: 1px solid #000;
 }
 
 @media screen and (min-width: 36em) {
