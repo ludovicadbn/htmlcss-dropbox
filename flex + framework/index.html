@@ -13,10 +13,10 @@
 <body>
     
     <header>
-        <div class="topnav">
+        <div class="topnav p-relative">
             <div class="container">
                 <a href="#"><img class="logo" src="./assets/img/logo-small.png" alt="logo dropbox"></a>
-                <div id="myLinks" class="text-right">
+                <div id="myLinks" class="text-right d-none d-lg-unset">
                     <ul>
                         <a class="px-3" href="#">Perché Dropbox?</a>
                         <a class="px-3" href="#">Funzioni</a>
@@ -49,10 +49,10 @@
                         <div class="mt-2">
                             <a class="btn bg-blue fs-4 text-white" href="#">Inizia la tua prova gratuita</a>
                             <a class="fs-2 d-block mt-1 text-black text-underline" href="#">Annulla in qualsiasi momento</a>    
-                            <a class="d-none" href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
+                            <a class="d-none d-lg-unset" href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
                     </div>
-                    <div class="d-none">
+                    <div class="d-none d-lg-unset">
                         <img class="img-respo" src="./assets/img/jumbo.png" alt="">
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                         <h3>Enterprise</h3>
                         <a class="btn bg-blue fs-3 text-white" href="#">Contatta l'ufficio vendite</a>
                     </div>
-                    <span class="fs-4 fw-bold d-none">Contatta l'ufficio vendite per i prezzi</span>
+                    <span class="fs-4 fw-bold d-none d-lg-unset">Contatta l'ufficio vendite per i prezzi</span>
                     <div class="fs-3 mt-2">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</div>
                 </div>
             </div>
@@ -190,7 +190,7 @@
 
         <section class="partner px-2 text-center">
             <div>
-                <img class="img-respo d-none" src="./assets/img/partner.png" alt="photo representing people talking">
+                <img class="img-respo d-none d-lg-unset" src="./assets/img/partner.png" alt="photo representing people talking">
             </div>
             <div>
                 <h3 class="mb-2">Entra in contatto con un partner Dropbox</h3>
@@ -239,54 +239,131 @@
             </div>
         </section>
 
-        <!-- <section>
-            <div class="container client-title">
-                <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
-                <a href="#">Scopri di più sui nostri clienti</a>
+        <!-- loghi clienti -->
+        <section class="my-6">
+            <div class="container mb-4">
+                <h2 class="fs-5 mb-1">Più di 500.000 team utilizzano Dropbox Business</h2>
+                <a class="text-blue" href="#">Scopri di più sui nostri clienti</a>
             </div>
-            <div class="container-flex">
-                <div class="bigsquare">
-                    <div class="client-logo" id="designit">
-                        <img src="./assets/img/designit.svg" alt="designit logo">
+            <div class="container-full d-lg-flex">
+                <div class="d-flex flex-wrap col-lg-4">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="designit">
+                        <img class="img-respo w-75" src="./assets/img/designit.svg" alt="designit logo">
                     </div>
-                    <div class="client-logo" id="uniarizona">
-                        <img src="./assets/img/arizona_state_university.svg" alt="arizona state university logo">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="uniarizona">
+                        <img class="img-respo w-75" src="./assets/img/arizona_state_university.svg" alt="arizona state university logo">
                     </div>
-                    <div class="client-logo" id="uniflorida">
-                        <img src="./assets/img/university_of_florida.svg" alt="university of florida logo">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="uniflorida">
+                        <img class="img-respo w-75" src="./assets/img/university_of_florida.svg" alt="university of florida logo">
                     </div>
-                    <div class="client-logo" id="topps">
-                        <img src="./assets/img/topps.svg" alt="topps logo">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="topps">
+                        <img class="img-respo w-75" src="./assets/img/topps.svg" alt="topps logo">
                     </div>
                 </div>
-                <div class="quote" id="quote">
-                    <img src="./assets/img/designit.svg" alt="designit logo">
-                    <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper."</p>
-                    <span>Morten Thomsen, Global IT Lead</span>
+                <div class="of-y-auto d-none d-lg-unset col-lg-4 p-4 bg-lightgray" id="quote">
+                    <img class="img-respo w-25 mb-2" src="./assets/img/designit.svg" alt="designit logo">
+                    <p class="mb-2">"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper."</p>
+                    <span class="fs-4">Morten Thomsen, Global IT Lead</span>
                 </div>
-                <div class="bigsquare">
-                    <div class="client-logo" id="world-bicycle">
-                        <img src="./assets/img/world_bicycle_relief.svg" alt="world bicycle relief logo">
+                <div class="d-flex flex-wrap col-lg-4">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="world-bicycle">
+                        <img class="img-respo w-75" src="./assets/img/world_bicycle_relief.svg" alt="world bicycle relief logo">
                     </div>
-                    <div class="client-logo" id="hearst-corp">
-                        <img src="./assets/img/hearst_corp.svg" alt="hearst corp logo">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="hearst-corp">
+                        <img class="img-respo w-75" src="./assets/img/hearst_corp.svg" alt="hearst corp logo">
                     </div>
-                    <div class="client-logo" id="lonely-planet">
-                        <img src="./assets/img/lonely_planet.svg" alt="lonely planet logo">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="lonely-planet">
+                        <img class="img-respo w-75" src="./assets/img/lonely_planet.svg" alt="lonely planet logo">
                     </div>
-                    <div class="client-logo" id="clear-channel">
-                        <img src="./assets/img/clear_channel.svg" alt="clear channel logo">
+                    <div class="client-logo col-6 col-md-3 col-lg-6 d-flex ai-center jc-center" id="clear-channel">
+                        <img class="img-respo w-75" src="./assets/img/clear_channel.svg" alt="clear channel logo">
                     </div> 
                 </div>
             </div>
-            <div class="contact-us">
+            <div class="bg-lightblue py-4 px-3 text-center text-lg-left">
                 <div>
-                    <h2>Porta Dropbox Business nella tua azienda.</h2>
-                    <a href="#">Inizia la tua prova gratuita</a>
+                    <h2 class="text-darkred">Porta Dropbox Business nella tua azienda.</h2>
+                    <a class="d-none d-lg-unset" href="#">Inizia la tua prova gratuita</a>
                 </div>
             </div>
-        </section> -->
+        </section>
+
+        <section>
+            <div class="container mb-6">
+                <div class="faq">
+                    <h3 class="fs-5 mb-2">Domande frequenti</h3>
+                    <div class="py-2 fs-4">
+                        <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced? <i class="fa-solid fa-angle-down"></i></h4>
+                        <!-- <span>Il piano standard fornisce ai team 5 TB (5000 GB) di spazio di archiviazione e semplici strumenti di condivisione e collaborazione. Per i team che hanno bisogno di più spazio di archiviazione e sicurezza, il piano Advanced offre tutto lo spazio necessario al team, oltre a sofisticate funzioni di amministrazione, controllo, integrazione e sicurezza. Per ulteriori informazioni sui nostri piani, consulta <a href="#">questa pagina</a></span> -->
+                    </div>
+                    
+                    <div class="fw-bold py-2 fs-4">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced? <i class="fa-solid fa-angle-down"></i></div>
+                    <div class="fw-bold py-2 fs-4">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced? <i class="fa-solid fa-angle-down"></i></div>
+                    <div class="fw-bold py-2 fs-4">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced? <i class="fa-solid fa-angle-down"></i></div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="bg-black">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 ">
+                    <h5 class="text-white fs-5 mb-2">Dropbox</h5>
+                    <ul>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Applicazione desktop</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Perchè Dropbox</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Piani</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Sicurezza</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h5 class="text-white fs-5 mb-2">Prodotti</h5>
+                    <ul>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Applicazione desktop</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Perchè Dropbox</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Piani</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Sicurezza</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 mt-2">
+                    <h5 class="text-white fs-5 mb-2">Azienda</h5>
+                    <ul>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Applicazione desktop</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Perchè Dropbox</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Piani</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Sicurezza</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 mt-2">
+                    <h5 class="text-white fs-5 mb-2">Supporto</h5>
+                    <ul>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Applicazione desktop</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Perchè Dropbox</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Piani</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Sicurezza</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 mt-2">
+                    <h5 class="text-white fs-5 mb-2">Community</h5>
+                    <ul>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Applicazione desktop</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Perchè Dropbox</a></li>
+                        <li class="mb-1"><a class="text-white fs-3" href="#">Piani</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container pb-5">
+            <div class="d-flex col-4 offright-8" id="language">
+                <a class="fs-4 text-lightgray pt-3" href="#"><span><i class="fa-solid fa-earth-americas"></i> Italiano <i class="fa-solid fa-caret-up"></i></span></a>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
